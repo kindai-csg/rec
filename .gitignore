@@ -2,3 +2,8 @@
 !.gitignore
 !main.py
 !record.py
+
+!python
+!python/*
+!build.sh
+!start.sh
