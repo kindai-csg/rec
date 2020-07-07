@@ -7,6 +7,7 @@ from flask_socketio import SocketIO, emit
 
 # from record import recording_save_img
 
+# capture = cv2.VideoCapture(0)
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'secret!'
 socketio = SocketIO(app, cors_allowed_origins="*")
