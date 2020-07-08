@@ -1,4 +1,3 @@
 *
 !.gitignore
-!main.py
-!record.py
+!server.py
