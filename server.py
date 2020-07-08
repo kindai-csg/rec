@@ -9,12 +9,12 @@ socketio = SocketIO(app, cors_allowed_origins="*")
 
 @socketio.on('live_1', namespace = '/')
 def live_1():
-    with open('/home/recorder/rec.kindai-csg.dev/latest.jpg', 'rb') as f:
+    with open('/home/recorder/public/latest127.0.0.1.jpg', 'rb') as f:
         emit('live_1', { 'data': base64.b64encode(f.read()).decode('ascii') })
 
 @socketio.on('live_2', namespace = '/')
 def live_2():
-    with open('/home/recorder/rec.kindai-csg.dev/latest172.24.18.2.jpg', 'rb') as f:
+    with open('/home/recorder/public/latest172.24.18.2.jpg', 'rb') as f:
         emit('live_2', { 'data': base64.b64encode(f.read()).decode('ascii') })
 
 def main():
